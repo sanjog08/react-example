@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.main-nav {
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr 5rem;
+    background-color: whitesmoke;
+    border-bottom: 2px solid rgb(57, 26, 88);
+    z-index: 2;
+}
+
+.logo-nav {
+    display: grid;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+}
+
+.menu-nav {
+    grid-column: 3/4;
+}
+
+.menu-nav ul {
+    height: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo-nav h2 {
+    color: rgb(57, 26, 88);
+    font-weight: 700;
+}
+
+.logo-nav span {
+    font-size: 120%;
+}
+
+.menu-nav ul li a {
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(57, 26, 88);
+}
+
+.menu-nav ul li:hover > a {
+    font-size: 110%;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+
+/* responsive css style  */
+@media (max-width: 998px) {
+    .main-nav {
+      height: 4rem;
+      grid-template-columns: 2rem 1fr 1fr 2rem;
+      align-items: center;
+    }
+  
+    .menu-nav {
+      display: none;
+    }
+  
+    .hamburger-menu {
+        display: flex;
+        grid-column: 3/4;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .hamburger-menu a {
+        text-decoration: none;
+        padding-top: 10px;
+        font-size: 25px;
+        color: rgb(57, 26, 88);
+    }
+
+    .mobile-menu-nav {
+        grid-column: 2/4;
+        position: absolute;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 20rem;
+        width: 85%;
+        display: grid;
+        align-items: center;
+        padding-left: 1rem;
+        transition: all 2s linear;
+        transform-origin: top;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    }
+
+    .mobile-menu-nav ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: start;
+    }
+    .mobile-menu-nav ul li {
+        font-size: 20px;
+        padding: 9px;
+    }
+
+} 

@@ -1,11 +1,12 @@
 .main-products {
-    margin: 10rem;
+    margin: 3rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
 }
 
 .header {
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 30px;
     justify-content: space-between;
     align-items: end;
 }
@@ -29,6 +30,7 @@
 
 img {
     width: 80%;
+    border-radius: 5px;
 }
 
 .add-to-cart {
@@ -46,6 +48,41 @@ img {
     background-color: #8e1818;
 }
 
+.birth-stone-collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.birth-img {
+    display: grid;
+    justify-items: center;
+}
+
+.birth-img img {
+    width: 70%;
+}
+
+.birth-details p {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.get-now {
+    padding: 12px 40px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #c00909;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.get-now:hover {
+    background-color: #8e1818;
+}
 
 
 @media (max-width: 998px) {
@@ -85,6 +122,36 @@ img {
     }
     
     .add-to-cart:hover {
+        background-color: #8e1818;
+    }
+
+    .birth-stone-collection {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .birth-img img {
+        width: 100%;
+    }
+
+    .birth-details p {
+        margin-top: 1rem;
+        font-size: 26px;
+    }
+
+    .get-now {
+        padding: 12px 35px;
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #c00909;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .get-now:hover {
         background-color: #8e1818;
     }
 }

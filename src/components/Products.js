@@ -11,7 +11,6 @@ const products = [
 export default function Products() {
   return (
     <>
-    
     <div className="main-products">
         <hr className="breaker" />
         <div className="header">
@@ -30,6 +29,18 @@ export default function Products() {
                 </div>
             ))}
         </div>
+        {/* new section  */}
+        <hr className="breaker" />
+        <div className="birth-stone-collection">
+            <div className="birth-img">
+                <img src="birthstone.webp" alt="" />
+            </div>
+            <div className="birth-details">
+                <p>Shop your Birthstone here.</p>
+                <button className="get-now">Get Now</button>
+            </div>
+        </div>
+        <hr className="breaker" />
     </div>
     </>
   )

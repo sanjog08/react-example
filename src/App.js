@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FirstIntro from './components/FirstIntro';
 import Marque from './components/Marque';
 import Tips from './components/Tips';
+import Products from './components/Products';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <FirstIntro />
     <Marque />
     <Tips />
+    <Products />
     </>
   );
 }

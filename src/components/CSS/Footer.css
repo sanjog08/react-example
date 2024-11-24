@@ -1,0 +1,39 @@
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-foot {
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start;
+    gap: 30px;
+    background-color: rgb(244, 146, 26);
+}
+
+.sub-foot {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+
+@media (max-width: 998px) {
+    .main-foot {
+        padding: 3rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

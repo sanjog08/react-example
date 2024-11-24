@@ -7,7 +7,7 @@ import Tips from './components/Tips';
 import Products from './components/Products';
 import Feedback from './components/Feedback';
 import Ending from './components/Ending';
-
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
     <Products />
     <Ending />
     <Feedback />
+    <Footer />
     </>
   );
 }

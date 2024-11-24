@@ -1,0 +1,19 @@
+.main-end {
+    margin: 3rem 12rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+h2 {
+    color: #8e1818;
+}
+
+
+@media (max-width: 998px) {
+    .main-end {
+        margin: 3rem 2rem;
+    }
+}

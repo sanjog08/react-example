@@ -6,6 +6,7 @@ import Marque from './components/Marque';
 import Tips from './components/Tips';
 import Products from './components/Products';
 import Feedback from './components/Feedback';
+import Ending from './components/Ending';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <Marque />
     <Tips />
     <Products />
+    <Ending />
     <Feedback />
     </>
   );

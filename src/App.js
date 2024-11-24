@@ -5,6 +5,7 @@ import FirstIntro from './components/FirstIntro';
 import Marque from './components/Marque';
 import Tips from './components/Tips';
 import Products from './components/Products';
+import Feedback from './components/Feedback';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <Marque />
     <Tips />
     <Products />
+    <Feedback />
     </>
   );
 }

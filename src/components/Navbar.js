@@ -34,7 +34,7 @@ function Navbar() {
             </ul>
         </div>
         <div className="hamburger-menu">
-            <a href="/" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+            <a href="/" onClick={(e) => {e.preventDefault(); setShowMediaIcons(!showMediaIcons)}}>
                 <GiHamburgerMenu />
             </a>
         </div>
